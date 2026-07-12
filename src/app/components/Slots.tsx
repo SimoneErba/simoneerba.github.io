@@ -28,7 +28,7 @@ export default function Slots({ onChange }: SlotsProps): JSX.Element {
               value={slot.toString()}
               onChange={(e) => handleSlotChange(e.target.value, index)}
               type="number"
-              className="border border-gray-300 p-2 rounded w-16 bg-white"
+              className="border border-gray-300 p-2 rounded w-16 bg-white text-gray-900 placeholder:text-gray-500"
               placeholder="0"
             />
           </div>

@@ -24,6 +24,10 @@ export default function HomeClient(): JSX.Element {
     <div className="p-4 bg-gray-100 min-h-screen">
       <div className="bg-red-700 p-4 rounded-md mb-4">
         <p className="text-2xl font-bold text-white">D&D Spellbook Generator</p>
+        <p className="mt-2 text-sm text-red-100">
+          Enter the spells your character knows, set your available spell slots, and this tool will build a random
+          subset into a usable spellbook.
+        </p>
       </div>
       <div className="flex space-x-4">
         <div className="flex-1 rounded-md bg-white max-h-[80vh] p-2">
