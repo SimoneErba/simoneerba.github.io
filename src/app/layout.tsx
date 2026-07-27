@@ -6,6 +6,8 @@ import "./globals.css";
 import { JSX } from "react";
 import { Analytics } from "@vercel/analytics/react";
 
+import { PostHogProvider } from "./providers";
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -29,7 +31,9 @@ export default function RootLayout({
 }>): JSX.Element {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>{children}</body>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        <PostHogProvider>{children}</PostHogProvider>
+      </body>
       <Analytics />
     </html>
   );
